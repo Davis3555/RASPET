@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?u6r1u1');
+  src:  url('icomoon.eot?u6r1u1#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?u6r1u1') format('truetype'),
+    url('icomoon.woff?u6r1u1') format('woff'),
+    url('icomoon.svg?u6r1u1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-user:before {
+  content: "\e971";
+}
+
+/*--------------------------------------COMO FUNCIONA----------------------------------------------------*/
+*{  
+  font-family: sans-serif;   
+}
+body{
+  background-color: aqua;
+}
+.menu{
+  float: right;
+  list-style: none;
+  padding: 0;  
+  margin: 0;
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+}
+.menu li a{
+  list-style: none;
+  padding: 12px 10px;
+  color: aliceblue;
+}
+.menu li a :hover{
+  list-style: none;   
+  color: gray;
+}
+
+.contenedor1{
+  width: 80%;
+  height: 25%;
+  background-color:azure;
+  float:right;
+  padding: 20px; 
+}
+.contenedor2{
+  width: 80%;
+  height: 25%;
+  background-color:azure;
+  float:right;
+  padding: 20px; 
+}
+.contenedor3{
+  width: 80%;
+  height: 25%;
+  background-color:azure;
+  float:right;
+  padding: 20px; 
+}
+.contenedor4{
+  width: 80%;
+  height: 25%;
+  background-color:azure;
+  float:right;
+  padding: 20px; 
+}
+.contenedor-contacto{
+  width: 80%;
+  height: 25%;
+  background-color:azure;
+  float:right;
+  padding: 20px; 
+}
+/*--------------------------------------QUIENES SOMOS----------------------------------------------------*/
