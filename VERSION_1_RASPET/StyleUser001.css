@@ -1,0 +1,117 @@
+/*estilo al texto de titulo*/
+header {
+    text-align: center;
+    font-family: verdana;
+    font-size: 40px;
+    font-weight: bold;
+    color:#0a0a29;
+    height: 40px;
+    top: 20px;
+    
+}
+/*estilo del body*/
+.body-img {
+
+    background: url(gps-perros-4.jpg);
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    
+}
+/*contenedr 2, recuadro usuario */
+.container2 {
+    box-shadow: 15px 5px 5px black;
+    position:relative;
+    left:70px;
+    top: 60px;
+    background-color: #03c9d6;
+    width: 500px;
+    height: 600px;
+    border: 30px;
+}
+
+/*Nombre del usuario seccion superior bajo su foto*/
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #276614;
+    font-family:fantasy ;
+}
+/*imagen o foto del usuario*/
+.avatar {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;  
+    margin:auto;
+    display:block;
+}
+/*datos personales del usuario*/
+h2 {
+    font-family:calibri;
+    font-style: bold;
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+    font-family:Calibri;
+    font-size:25px;
+    text-align: left;
+    padding: 10px;    
+    
+}
+
+/*estilo al recuadro de la mascota*/
+.container3 {
+    
+    box-shadow: 15px 5px 5px black;
+    position:relative;
+    left:70px;
+    top: 60px;
+    background-color: #03c9d6;
+    width: 500px;
+    height: 600px;
+    border: 30px;
+    
+    /*right:50px;
+    top: 110px;
+    background-color: #03c9d4;
+    width: 500px;
+    height: 600px;*/
+    
+}
+/*imagen de la mascota */
+.avatar2 {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;  
+    margin:auto;
+    display:block;
+}
+
+/*Datos de la mascota*/
+h4 {
+    font-family:calibri;
+    font-style: bold;
+    font-size: 30px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
