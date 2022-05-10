@@ -5,50 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RASPET</title>
+    <link rel="stylesheet" href="StyleAcercaNosotros.css">
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-
-    <ul class="menu">
-        <li><a href="RASPETmain.html"><i class="icon-home3"></i></a></li>
-       <li><a href="InicioSesion.html"><i class="icon-user"></i></a></li>
-       <li><a href="AcercaNosotros.html"><i class="icon-phone"></i></a></li>
-    </ul>
-
-    <div class="">
-        <h1 align="center">¿Quienes somos?</h1>
-        <img align="left"src="img/quienessomos.jpg">
-    </div> 
+        <!------------definiciion del menu ---------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">RASPET</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+              
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="AcercaNosotros.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ComoFunciona.html">¿Como funcionamos?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nuestros Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Productos.html">Componentes</a></li>
+                  <li><a class="dropdown-item" href="repuestos.html"> Repuestos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="InicioSesion.html">Inicia sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CrearCuenta.html">Crea tu cuenta</a>
+              </li>
+            </ul>
+                
+             
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </div> 
+      <!--fin menu suprior-->
  
 
 
-<div class="container-lg">
-    <div class="row">     
-        <div class="col" style="background-color:beige";>
-            <p>Somos una pyme con una vision diferente en cuanto al cuidado de tus mascotas, nos importa su bienestar
-                tanto como el de sus mascotas y el de sus dueños, por lo cual queriamos ofrecer una genial solucion cuando sus 
-                mascotas se extravian. Somos estudiantes de ingeniria en informatica con una vision sobre la tecnologia que 
-                puede llevarnos muy lejos y ser capaces de poder facilitarnos ciertas cosas en nuestra vida cotidiana.
-            </p>
+<div class="container fluid">
+    <header class="col-12">Quienes somos...</header>  
+    <div class="row">    
+        <div class="col-6" ;>
+            <div class="container1">
+                <p>Somos una pyme con una vision diferente en cuanto al cuidado de tus mascotas, nos importa su bienestar
+                    tanto como el de sus mascotas y el de sus dueños, por lo cual queriamos ofrecer una genial solucion cuando sus 
+                    mascotas se extravian. Somos estudiantes de ingeniria en informatica con una vision sobre la tecnologia que 
+                    puede llevarnos muy lejos y ser capaces de poder facilitarnos ciertas cosas en nuestra vida cotidiana.
+                </p>
+            </div>
         </div>
     
-        <div class="col"  style="background-color:blanchedalmond";>
-            <p>Quiza se pregunten si podemos nosotros tener contacto directo con ustedes y asi es, disponemos de diferentes metodos de contacto
-                frente a cualquier eventualidad o duda con nuestros servicios, o simplemente solo informarse más de nuestro metodo de trabajo.
-                No tenemos problema con poder solucionar cada una de sus dudas, tan solo acerquense a nosotros de cualquier de nuestras formas de contacto y
-                estaremos contactandonos a la brevedad junto a cada una de sus dudas.
-            </p>
+        <div class="col-6" >
+            <div class="container2">
+                <p>Quiza se pregunten si podemos nosotros tener contacto directo con ustedes y asi es, disponemos de diferentes metodos de contacto
+                    frente a cualquier eventualidad o duda con nuestros servicios, o simplemente solo informarse más de nuestro metodo de trabajo.
+                    No tenemos problema con poder solucionar cada una de sus dudas, tan solo acerquense a nosotros de cualquier de nuestras formas de contacto y
+                    estaremos contactandonos a la brevedad junto a cada una de sus dudas.
+                </p>
+            </div>    
         </div>
     
-        <div class="col" style="background-color:bisque";>
-           <h1>Algunas de nuestras formas de contacto.</h1>
-           <ul>
-               <p>Telefono movil: +569 58824941 </p>
-               <p>Correo electronico: emanuel.alexis787@gmail.com </p>
-               <p>Redes sociales: <a href="https://www.instagram.com/style.markett/">@RASPET</a></p>
-           </ul>
-       </div>
+        <div class="col-12" >
+            <footer class="container3">
+                <h3>Informacion de mi Mascota</h3>
+                    <ul>
+                        <p>Telefono movil: +569 58824941 </p>
+                        <p>Correo electronico: emanuel.alexis787@gmail.com </p>
+                        <p>Redes sociales: <a href="https://www.instagram.com/style.markett/">@RASPET</a></p>
+                    </ul>
+            </div>
+                
+        </div>
 
     </div>
 
