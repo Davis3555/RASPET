@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="sytlesheet" href="CrearCuenta.css">
     <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="visual.css">
 
     <!--archivo css del plugin jquery validation engine-->
     <link rel="stylesheet" 
@@ -19,7 +20,7 @@
     integrity="sha512-fvBUZJJBrJrzrFYM/EN2isPokoNnx331y30ZXIxRRlop1aq6rT6d8oY6WJVsiXZoso0dIZ2nbQjtGLi6Kkxr/Q==" crossorigin="anonymous" />
 
   </head>
-  <body>
+  <body class="body-color">
     
         <div class="row no-gutters bg-blue">
             <div class="col-sm-5">
@@ -41,7 +42,7 @@
                     <p class="text-muted">Ingresa tu información para registrarte.</p>
                     <!--clase text-muted es para darle el color-->
                     
-                    <form>
+                    <form id="Login" action="InicioSesion.html" method="post">
                         <div class="form-row mb-2">
                             <!--nombre de usuario -->
                             <div class="form-group col-sm-6">
@@ -75,11 +76,13 @@
                             <div class="row">
                               <input type="checkbox" data-required="1" name="terminos" id="terminos" value="">
                               <label for="terminos"><span class="span-terminos">Acepto la <a target="_blank" 
-                              href="C:\Users\lesli\RASPET\términos y condiciones.html"    class="C:\Users\lesli\RASPET\términos y condiciones.html" >politica de privacidad</a></span></label>
+                              href="terminos_condiciones.html" >politica de privacidad</a></span></label>
                         </div>
-                        <button class="btn btn-primary width-100">Regístrate</button>
-
+                       
                     </form>
+                    <button id="Registrarse" class="btn btn-primary width-100"><a href="#" style="color: white ;">Regístrate</button></a>
+                    <button class="btn btn-primary width-100"><a href="index.html" style="color: white ;">Volver a pagina principal</button></a>
+
                     <!-- Optional JavaScript -->
                     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
                     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -102,8 +105,13 @@
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
                 <script>
+
                 $(document).ready(() => {
+                    event.preventDefault();
                     $('#Login').validationEngine();
+                    $( "#Registrarse" ).click(function() {
+                    $( "#Login" ).submit();
+                    });
                 });
                 </script>     
             </div>
@@ -112,7 +120,5 @@
     
   </body>
 </html>
-
-
 
 
