@@ -21,7 +21,7 @@ def user001(request):
     return render(request, 'core/user001.html')
 
 def terminosCondiciones(request):
-    return render(request, 'core/terminos_condiciones')
+    return render(request, 'core/terminos_condiciones.html')
 
 def encuentraMascota(request):
     return render(request, 'core/encuentramascota.html')
