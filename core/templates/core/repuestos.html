@@ -1,0 +1,51 @@
+{% extends "core/base.html" %} 
+{% load static %}
+{% block contenido %}
+  
+
+<hr>
+<div class="container-sm container-md container-lg">
+    <div class="row">
+        <div class="col">
+            <p>¡Dentro de esta pagina encontraras los repuestos más necesitados o accesorios para poder utilizar al 100% tus accesorios!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-sm container-md container-lg">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'core/img/repuesto1.jpg'%}" class="card-img-top" alt="producto1">
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Cargador tipo c.</h5>
+          <p class="card-text">Cargador tipo c para poder recargar tus gps incluye cable y conexión a enchufe.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'core/img/repuesto2.jpg'%}" class="card-img-top" alt="producto2">
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Collar adaptable para gps.</h5>
+          <p class="card-text">Collar adaptable a nuestros productos modificable su color a su gusto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'core/img/repuesto3.jpg'%}" class="card-img-top" alt="producto3">
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Cambio de mini panel solar para gps.</h5>
+          <p class="card-text">Reparacion del panel solar que incluye nuestros gps para renovacion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock contenido %}
