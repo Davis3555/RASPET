@@ -1,6 +1,5 @@
-from unicodedata import name
 from django.urls import URLPattern, path
-from .views import acercaNosotros, crearCuenta, index, acercaNosotros, comoFunciona, iniciarSesion, productos, repuestos, user001, terminosCondiciones, encuentraMascota
+from .views import acercaNosotros, crearCuenta, home, index, acercaNosotros, comoFunciona, home, insertarMascota, productos, repuestos,  terminosCondiciones, encuentraMascota
 
 urlpatterns = [
     path('', index, name="index"),
@@ -8,9 +7,11 @@ urlpatterns = [
     path('como-funciona/', comoFunciona, name="como-funciona"),
     path('productos/', productos, name="productos"),
     path('repuestos/', repuestos, name="repuestos"),
-    path('user001/', user001, name="user001"),
     path('terminos-condiciones/', terminosCondiciones, name="terminos-conidiciones"),
     path('encuentra-mascota/', encuentraMascota, name="encuentra-mascota"),
     path('crear-cuenta/', crearCuenta, name="crear-cuenta"),
-    path('inicia-sesion/', iniciarSesion, name="iniciar-sesion"),
+    path('home', home, name="home"),
+    path('ingresar-mascota/', insertarMascota, name="ingresar-mascota")
+
+    
 ]

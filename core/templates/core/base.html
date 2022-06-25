@@ -54,14 +54,18 @@
                 <li><a class="dropdown-item" href="{% url 'repuestos' %}"> Repuestos</a></li>
               </ul>
             </li>
+            {% if user.is_authenticated %}  
+            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Cerrar Sesion</a></li> 
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">@{{ user.username }}</a></li>  
+            {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'iniciar-sesion' %}">Inicia sesion</a>
+              <a class="nav-link" href="{% url 'login' %}">Inicia sesion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="background-color: #51d1f6;" href="{% url 'crear-cuenta' %}">Crea tu cuenta</a>
             </li>
           </ul>
-       
+          {% endif %}
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
