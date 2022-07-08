@@ -35,6 +35,6 @@ class registroMascotas(models.Model):
     edadMascota = models.IntegerField(verbose_name='Edad de tu mascota')
     sexo = models.IntegerField(choices=opciones_sexo)
     tipoMascota = models.IntegerField(choices=opciones_mascota)
-    apoderado = apoderado =models.ForeignKey(apoderado, on_delete=models.CASCADE)
+    apoderado = models.ForeignKey(apoderado, on_delete=models.CASCADE)
     def __str__(self):
         return self.nombreMascota

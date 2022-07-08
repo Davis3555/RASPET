@@ -69,9 +69,9 @@ def crearCuenta(request):
         formulario = CustomUserCreationForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
-            messages.success(request, "Usuario Creado")
             user =authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password2"])
             login(request, user)
+            messages.success(request, "Usuario Creado")
             return redirect(to=home)
         data["form"] =formulario
     return render(request, 'registration/crearcuenta.html', data)
