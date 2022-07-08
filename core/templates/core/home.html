@@ -65,25 +65,81 @@
           </div>
       </div>
   </div>
-  <div class="perfil-usuario-body">     
-      <div class="perfil-usuario-bio">
-          <h3 class="titulo">Bienvenido {{ user.first_name}} {{ user.last_name}} </h3>
-          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="perfil-usuario-footer">
-          <ul class="">
-              <li><i class="icono fas fa-map-signs"></i> Direccion de usuario: @{{ user.username}}</li>
-              <li><i class="icono fas fa-map-signs"></i> Correo electronico: {{ user.email}}</li>          
-          </ul>
-      </div>
-      <br>
-      <div>
-        <a class="btn btn-primary btn-sm" href="ingresar-mascota">Agregar mascota</a> <a class="btn btn-primary btn-sm" href="#">Editar Mascota</a> <a class="btn btn-primary btn-sm" href="#">Buscar mascota</a>
-      </div>
-      
 
+  <div class="perfil-usuario-body">     
+    <div class="perfil-usuario-bio">
+        <h3 class="titulo">Bienvenido {{ user.first_name}} {{ user.last_name}} </h3>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="perfil-usuario-footer">
+        <ul class="">
+            <li><i class="icono fas fa-map-signs"></i> Direccion de usuario: @{{ user.username}}</li>
+            <li><i class="icono fas fa-map-signs"></i> Correo electronico: {{ user.email}}</li>                          
+        </ul>
+    </div>
+    <br>
+<!------------------------------------------------>
+<!------------------------------------------------>
+<div class="card container-fluid">
+  <div class="card-body">
+                <h3 class="text-center">Lista de mascotas</h3>
+                <div>
+                  <form method="get">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Escribe aqui para buscar" name="buscar">
+                      <button class="btn btn-outline-success" type="submit" id="button-addon2">Buscar</button>
+                    </div>
+                  </form>
+                </div>
+
+
+      <div class="row">
+        <table class="table table-hover table-responsive-sm">
+              <thead class="table-dark">
+                <tr>
+                  <td>Id chip</td>
+                  <td>Nombre Mascota</td>
+                  <td>Edad mascota</td>
+                  <td>Sexo</td>
+                  <td>Tipo mascota</td>
+                  <td>Apoderado</td>
+                  <td>Opciones</td>
+                </tr>
+              </thead>
+              {% for ma in mascotas %}
+                <tr>
+                  <td>{{ma.idChip}}</td>
+                  <td>{{ma.nombreMascota}}</td>
+                  <td>{{ma.edadMascota}}</td>
+                  <td>{{ma.sexo}}</td>
+                  <td>{{ma.tipoMascota}}</td>
+                  <td>{{ma.apoderado}}</td>      
+                  <td>
+                  
+                  <a class="btn btn-outline-primary btn-sm" href="{% url 'modificar-mascota' ma.idChip %}">Modificar</a>
+                  
+                  
+                  <a class="btn btn-outline-danger btn-sm" href="{% url 'eliminar-mascota' ma.idChip %}">Eliminar</a>
+
+                  </td>  
+                </tr>
+              {% endfor %}
+        </table>
+        <hr>
+        <div>
+        {% include 'core/paginator.html' %}
+        </div>
   </div>
+      <br>
+      
+    </div>       
+</div>
+</div>
+<br>
+<div>
+  <a class="btn btn-primary btn-sm" href="{% url 'crear-apoderado' %}">Agregar apoderado</a> <a class="btn btn-primary btn-sm" href="ingresar-mascota">Agregar mascota</a>
+</div>
 </section>
       
 <!----------------------------------------------------------->

@@ -3,7 +3,7 @@ from pyexpat import model
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.forms import ModelForm
-from .models import registroMascotas
+from .models import registroMascotas, apoderado
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
@@ -13,5 +13,10 @@ class CustomUserCreationForm(UserCreationForm):
 class mascotaForm(ModelForm):
     class Meta:
         model = registroMascotas
+        fields = '__all__'
+
+class apoderadoForm(ModelForm): 
+    class Meta:
+        model = apoderado
         fields = '__all__'
         
